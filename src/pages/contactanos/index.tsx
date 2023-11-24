@@ -1,6 +1,7 @@
 
-import { WebLayout } from '@/components'
+
 import React from 'react'
+import { WebLayout } from 'src/components'
 
 const Contactanos = () => {
   return (

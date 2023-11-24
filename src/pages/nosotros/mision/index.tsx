@@ -1,6 +1,7 @@
-import { WebLayout } from '@/components'
+
 import Image from 'next/image'
 import React from 'react'
+import { WebLayout } from 'src/components'
 
 const Mision = () => {
   return (

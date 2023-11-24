@@ -17,11 +17,24 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black !important;
+  background: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.transicion-div {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
 }

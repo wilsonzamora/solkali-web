@@ -1,1 +1,1 @@
-export * from './webLayout'
+export * from './WebLayout'

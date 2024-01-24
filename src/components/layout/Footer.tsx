@@ -1,43 +1,67 @@
-import React from 'react'
+import { Flex, Text } from "@chakra-ui/react";
+
 import { IoMdMail, IoLogoWhatsapp } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
 import { FaBuilding, FaRoad, FaTruck } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-[100%] bg-[#004d8a] h-[250px] flex flex-col justify-between'>
-      <div className='w-[90%] mx-auto pt-[25px] text-white flex justify-between'>
-        <div className='flex flex-col !w-[420px]'>
-          <span className='border border-2 border-transparent !border-b-[#feb100] w-[50px]'>SERVICIOS</span>
-          <div className='mt-[10px] !flex space-x-2 items-center'>
+    <Flex
+      flexDir='column'
+      justifyContent='space-between'
+      width='100%'
+      background='#004d8a'
+      minHeight='250px'
+    >
+      <Flex
+        flexDir={{ base: 'column' ,md: 'row' }}
+        width={{ base: '100%', md: '90%' }}
+        marginX='auto'
+        paddingTop='25px'
+        color='white'
+        justifyContent={{ base: 'center', md: 'space-between' }}
+        alignItems={{ base: 'center' }}
+        gap={{ base: '10px' }}
+      >
+        <Flex flexDir='column' width={{ base: '100%', md: '420px' }} paddingX={{ base: '30px', md: '0px' }}>
+          <Text borderBottom='2px solid #feb100' width='min-content' marginX={{ base: 'auto', md: '0px' }} >
+            SERVICIOS
+          </Text>
+          <Flex marginTop='10px' gap='8px' alignItems='center'>
             <FaBuilding />
-            <span className='w-[100%] text-justify text-[14px] font-[300]'>
+            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={400}>
               Construcción de edificios
-            </span>
-          </div>
-          <div className='mt-[5px] !flex space-x-2 items-center'>
+            </Text>
+          </Flex>
+          <Flex marginTop='5px' gap='8px' alignItems='center'>
             <FaRoad />
-            <span className='w-[100%] text-justify text-[14px] font-[300]'>
+            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={400}>
               Construcción de carreteras
-            </span>
-          </div>
-          <div className='mt-[5px] !flex space-x-2 items-center'>
+            </Text>
+          </Flex>
+          <Flex marginTop='5px' gap='8px' alignItems='center'>
             <FaTruck />
-            <span className='w-[100%] text-justify text-[14px] font-[300]'>
+            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={400}>
               Transporte de carga por carretera
-            </span>
-          </div>
-        </div>
+            </Text>
+          </Flex>
+        </Flex>
 
-        <div className='flex flex-col !w-[420px]'>
-          <span className='border border-2 border-transparent !border-b-[#feb100] w-[50px]'>CONTÁCTANOS</span>
-          <div className='mt-[10px] !flex space-x-2 items-center'>
+        <Flex
+          flexDir='column'
+          width={{ base: '100%', md: '420px' }}
+          paddingX={{ base: '30px', md: '0px' }}
+          marginTop={{ base: '20px', md: '0px' }}
+        >
+          <Text borderBottom='2px solid #feb100' width='min-content' marginX={{ base: 'auto', md: '0px' }} >
+            CONTÁCTANOS
+          </Text>
+          <Flex marginTop='10px' gap='8px' alignItems='center'>
             <MdLocationOn className='!w-[16px] !h-[16px]' />
-            <span className='w-[100%] text-justify text-[14px] font-[300]'>
-              Calle los Pinos Mz “A” Lt 8
-              Asoc. Gramalote Ñaña Lima – Lima
-            </span>
-          </div>
+            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={400}>
+              C. Los Pinos Mz “A” Lt 8 Ñaña, Lima – Lima
+            </Text>
+          </Flex>
           <div className='mt-[5px] !flex space-x-2 items-center'>
             <IoMdMail />
             <span className='w-[100%] text-justify text-[14px] font-[300]'>
@@ -50,15 +74,15 @@ const Footer = () => {
               907 576 704 - 997 885 021
             </span>
           </div>
-        </div>
-      </div>
+        </Flex>
+      </Flex>
 
-      <div className='text-white flex justify-center py-[10px] border border-transparent border-[0.5px] !border-t-[#feb100] text-[14px]'>
+      <div className='text-white flex justify-center py-[10px] border border-transparent border-[0.5px] !border-t-[#feb100] text-[14px] mt-[15px]'>
         <span>
           Globo Fast Solkali 2023  -  Todos los derechos reservados.
         </span>
       </div>
-    </div>
+    </Flex>
   )
 }
 

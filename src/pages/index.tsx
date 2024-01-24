@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+
 import Home from './home'
 
 const Inicio = () => {

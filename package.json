@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "antd": "^5.11.1",
     "axios": "^1.6.0",
     "canvas-confetti": "^1.9.0",
+    "framer-motion": "^10.16.7",
     "next": "^14.0.1",
     "next-connect": "^0.13.0",
     "notistack": "^3.0.1",
     "react": "^18",
+    "react-click-away-listener": "^2.2.3",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
   },

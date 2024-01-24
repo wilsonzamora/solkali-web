@@ -1,6 +1,6 @@
 
 export const navOptions = [
-  {label: 'INICIO', path: '/home'},
+  {label: 'INICIO', path: '/'},
   {label: 'NOSOTROS', path: '/nosotros'},
   {label: 'SERVICIOS', path: '/servicios'},
   // {label: 'PROVEEDORES', path: '/proveedores'},

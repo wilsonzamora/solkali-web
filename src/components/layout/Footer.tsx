@@ -58,7 +58,7 @@ const Footer = () => {
           </Text>
           <Flex marginTop='10px' gap='8px' alignItems='center'>
             <MdLocationOn className='!w-[16px] !h-[16px]' />
-            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={400}>
+            <Text width='100%' textAlign='justify' fontSize={14} fontWeight={300}>
               C. Los Pinos Mz “A” Lt 8 Ñaña, Lima – Lima
             </Text>
           </Flex>

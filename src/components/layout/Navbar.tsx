@@ -38,6 +38,7 @@ export const Navbar = (props: INavbar) => {
       >
         <Flex
           cursor='pointer'
+          onClick={() => router.push('/')}
           paddingX={{ base: '4px', md: '10px' }}
           width={{ base: '180px', md: '300px' }}
           height={{ base: '65px', md: '95px' }}
@@ -51,9 +52,8 @@ export const Navbar = (props: INavbar) => {
               key={opt.label}
               className={`font-[500] flex justify-center items-end pb-[10px] text-[16px] text-[#004d89] h-[90px] px-5
               hover:text-[#feb100] hover:cursor-pointer border border-b-[2px] border-transparent hover:border-b hover:border-b-[2px]
-              hover:border-b-[#feb100] relative mb-[1px] ${path.includes(opt.path) && '!text-[#feb100] border-b-[2px] !border-b-[#feb100]'}
-              
-              `}
+              hover:border-b-[#feb100] relative mb-[1px]
+              ${(path === opt.path || path.includes('/nosotros') && opt.path.includes('/nosotros')) && '!text-[#feb100] border-b-[2px] !border-b-[#feb100]'}`}
               onMouseEnter={() => props.handleEnterMouse(opt.label)}
               onMouseLeave={props.handleLeaveMouse}
               onClick={

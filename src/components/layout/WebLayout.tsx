@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import { Flex, useBreakpointValue } from '@chakra-ui/react';
 
@@ -18,27 +18,8 @@ export const WebLayout = (props: IWebLayout) => {
 
   const [showMobileOptions, setShowMobileOptions] = useState(false)
   const [optionSelected, setOptionSelected] = useState<string | undefined>(undefined)
-  console.log('showMobileOptions:', showMobileOptions)
 
   const isMobile = useBreakpointValue({ base: true, md: false });
-
-  // const [isMobile, setIsMobile] = useState(
-  //   typeof window !== 'undefined' ? window.innerWidth <= 767 : false
-  // );
-
-  // const handleResize = () => {
-  //   setIsMobile(window.innerWidth <= 767);
-  //   if (window.innerWidth > 767) {
-  //     setShowMobileOptions(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
   const handleEnterMouse = (opt: string) => {
     setIsHoverButton(true)

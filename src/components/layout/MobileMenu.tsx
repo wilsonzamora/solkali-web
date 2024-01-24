@@ -52,7 +52,8 @@ export const MobileMenu = (props: IMobileMenu) => {
             fontWeight={700}
             height={opt.label === 'NOSOTROS' ? '61px' : 'auto'}
             color={path === opt.path ? '#feb100' : '#004d89'}
-            padding='20px'
+            paddingX='20px'
+            paddingY='30px'
             width='100%'
           >
             {opt.label === 'NOSOTROS' ? (
